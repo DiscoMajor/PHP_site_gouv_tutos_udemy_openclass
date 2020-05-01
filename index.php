@@ -66,7 +66,7 @@
 
             <label id="label_formulaires"><p>Code Postal</p></label><input type="codepostal" pattern="[0-9]{5}" name="departement" id="size_for_classique" placeholder="56700" maxlength="5" required>
         </div>
-
+</form>
  
 
     <!-- TITRES CHECKBOX -->
@@ -77,43 +77,45 @@
     <!--FORMULAIRES CHECKBOX -->
 
 
-
+<form method="POST" action="traitement.php">
     <div class="checkbox">
         <div>
-            <input type="checkbox" name="travail"><label id="checkbox_bold">Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu'ils sont indispensables à l'exercice d’activités ne pouvant être organisées sous forme de télétravail ou déplacements professionnels ne pouvant être différés.</label>
+            <input type="checkbox" name="check_list[]" value='Sortie pour le travail '><label id="checkbox_bold">Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu'ils sont indispensables à l'exercice d’activités ne pouvant être organisées sous forme de télétravail ou déplacements professionnels ne pouvant être différés.</label>
         </div>
         </br>
         <div>
-            <input type="checkbox" name="achat"><label id="checkbox_bold">Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessité dans des établissements dont les activités demeurent autorisées <a href="https://www.service-public.fr/particuliers/actualites/A13921">(liste des commerces et établissements qui restent ouverts)</a>.</label>
+            <input type="checkbox" name="check_list[]" value='Déplacements pour des courses '><label id="checkbox_bold">Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessité dans des établissements dont les activités demeurent autorisées <a href="https://www.service-public.fr/particuliers/actualites/A13921">(liste des commerces et établissements qui restent ouverts)</a>.</label>
         </div>
         </br>
         <div>
-            <input type="checkbox" name="soin"><label id="checkbox_bold">Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d'une affection de longue durée.</label>
+            <input type="checkbox" name="check_list[]" value='Sortie pour soins '><label id="checkbox_bold">Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d'une affection de longue durée.</label>
         </div>
         </br>
         <div>
-            <input type="checkbox" name="famille"><label id="checkbox_bold">Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants.</label>
+            <input type="checkbox" name="check_list[]" value='Déplacements motif familial,assistance personnes vulnérables/bas âge '><label id="checkbox_bold">Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants.</label>
         </div>
         </br>
         <div>
 
-            <input type="checkbox" name="sport"><label id="checkbox_bold">Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal d'un kilomètre autour du domicile, liés soit à l'activité physique individuelle des personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.</label>
+            <input type="checkbox" name="check_list[]" value='Déplacement pour activité physique '><label id="checkbox_bold">Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal d'un kilomètre autour du domicile, liés soit à l'activité physique individuelle des personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.</label>
         </div>
         </br>
         <div>
-            <input type="checkbox" name="convocation"><label id="checkbox_bold">Convocation judiciaire ou administrative.</label>
+            <input type="checkbox" name="check_list[]" value='Convocation judiciaire ou administrative '><label id="checkbox_bold">Convocation judiciaire ou administrative.</label>
         </div>
         </br>
         <div>
-            <input type="checkbox" name="mission"><label id="checkbox_bold">Participation à des missions d’intérêt général sur demande de l’autorité administrative.</label>
+            <input type="checkbox" name="check_list[]" value='Sortie sur demande administrative '><label id="checkbox_bold">Participation à des missions d’intérêt général sur demande de l’autorité administrative.</label>
         </div>
     </div>
+<form>
 
 
 
     <!--FORMULAIRE APRES CHECKBOX -->
 
 
+<form method="POST" action="traitement.php">
 
         <div class="formulaires_classiques">
 
@@ -121,8 +123,9 @@
 
             <label id="label_formulaires"><p>Heure de sortie</p></label><input type="text" name="heuresortie" id="size_for_classique" placeholder="10:30" required>
 
-            <input type="submit" name="" id="submit_button">
+            <input type="submit" name="submit" id="submit_button">
         </div>
+
 </form>
 
  

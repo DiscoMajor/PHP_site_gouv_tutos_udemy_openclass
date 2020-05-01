@@ -21,11 +21,8 @@ else
 }
 ?>
 
-<?php 
-/* case à chocer formulaire */
 
 
-?>
 
 <!DOCTYPE html>
 
@@ -45,6 +42,25 @@ else
         '<p>Vous avez rempli le formulaire avec succés</p>';
     } ?>
     <?php ?>
+
+
+
+<p>Et vous sortez pour le(s) motif(s) suivant(s) : </p>
+
+<?php
+/* case à chocer formulaire */
+if(!empty($_POST['check_list'])) {
+    foreach($_POST['check_list'] as $check) {
+            echo "</br>";
+            echo $check;
+            echo "</br>";
+    }
+}
+?>
+</br>
+
+
+    
 
 
         <p><a href="/">Revenir à l'acceuil du formulaire de sortie</a></p>
