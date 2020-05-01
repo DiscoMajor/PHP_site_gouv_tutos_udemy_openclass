@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/*header */
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+#alignement_texteheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8px;
+}
+
+#covbackground {
+    background-color: #1B0A7F;
+    color: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #1B0A7F;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-width: 10px;
+}
+
+#generateurbackground {
+    background-color: #E0140E;
+    color: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #E0140E;
+    display: inline-block;
+    width: 675px;
+    padding-left: 5px;
+    border-width: 10px;
+}
+
+.p_header {
+    width: 790px;
+    margin-top: -25px;
+    margin-right: 5px;
+}
+
+
+/*  BODY AVANT FORMULAIRES */
+
+#h3body {
+    color: #1B0A7F;
+    width: 285px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: -25px;
+}
+
+#body_avant_formulaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -95px;
+    margin-bottom: -20px;
+}
+
+
+/*  FORMULAIRES CLASSIQUES */
+
+.formulaires_classiques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+#label_formulaires {
+    align-self: start;
+    margin-left: 736px;
+}
+
+#size_for_classique {
+    width: 400px;
+    height: 40px;
+}
+
+
+/*  TITRE CHECKBOX */
+
+#h3checkbox {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 56px;
+}
+
+
+/*  FORMULAIRES CHECKBOX */
+
+.checkbox {
+    display: inline-block;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 750px;
+    font-weight: 900;
+}
+
+#checkbox_bold {
+    font-weight: 700;
+}
+
+#submit_button {
+    margin-top: 30px;
+}
+
+
+/*  CREDITS + GITHUB LINK */
+
+#credits_gitlink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+#github {
+    font-size: 0.8em;
+    font-weight: 850;
+}
+
+#credits {
+    font-weight: 875;
+}
+
+
+/*  IMAGE DNUM */
+
+#dnum {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+
+/*  FOOTER */
+
+footer {
+    background-color: #222222;
+}
+
+#listfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    color: white;
+}
+
+#a_listfooter {
+    color: white;
+}
+
+#a_listfooter:hover {
+    color: #1381bf;
+}
+
+#footer_numerotel {
+    color: #00a94f;
+    font-weight: 900
+}
+
+#footer_numerotel:hover {
+    color: #1381bf;
+}
+
+
+/*  AUTRES SANS ID OU CLASS OU DIV */
+
+a:hover {
+    color: #1381bf;
+}
+
+a {
+    color: #000191;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    margin-right: 40px;
+}
+
+.checkbox {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
