@@ -25,6 +25,7 @@ else
 /* case à chocer formulaire */
 
 BLABLABLA
+BLABLABLA
 
 ?>
 
