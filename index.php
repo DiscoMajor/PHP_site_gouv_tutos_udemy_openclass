@@ -97,7 +97,7 @@
         </br>
         <div>
 
-            <input type="checkbox" name="activitephysique"><label id="checkbox_bold">Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal d'un kilomètre autour du domicile, liés soit à l'activité physique individuelle des personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.</label>
+            <input type="checkbox" name="sport"><label id="checkbox_bold">Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal d'un kilomètre autour du domicile, liés soit à l'activité physique individuelle des personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.</label>
         </div>
         </br>
         <div>
@@ -105,7 +105,7 @@
         </div>
         </br>
         <div>
-            <input type="checkbox" name="missions"><label id="checkbox_bold">Participation à des missions d’intérêt général sur demande de l’autorité administrative.</label>
+            <input type="checkbox" name="mission"><label id="checkbox_bold">Participation à des missions d’intérêt général sur demande de l’autorité administrative.</label>
         </div>
     </div>
 
