@@ -3,7 +3,16 @@
 
 $erreur='';
 
-if (!empty ($_POST['prenom']) AND !empty ($_POST['nom']) AND !empty ($_POST['datenaissance']) AND !empty ($_POST['lieunaissance']) AND !empty ($_POST['adresse']) AND !empty ($_POST['ville']) AND !empty ($_POST['codepostal']) AND !empty ($_POST['datesortie']) AND !empty ($_POST['heuresortie']))
+if (!empty($_POST['prenom']) AND 
+    !empty($_POST['nom']) AND 
+    !empty($_POST['datenaissance']) AND 
+    !empty($_POST['lieunaissance']) AND 
+    !empty($_POST['adresse']) AND 
+    !empty($_POST['ville']) AND 
+    !empty($_POST['codepostal']) AND 
+    !empty($_POST['datesortie']) AND 
+    !empty($_POST['heuresortie'])
+    )
 {
     $prenom= htmlspecialchars ($_POST['prenom']);
     $nom= htmlspecialchars ($_POST['nom']);
@@ -14,15 +23,12 @@ if (!empty ($_POST['prenom']) AND !empty ($_POST['nom']) AND !empty ($_POST['dat
     $codepostal= htmlspecialchars ($_POST['codepostal']);
     $datesortie= htmlspecialchars ($_POST['datesortie']);
     $heuresortie= htmlspecialchars ($_POST['heuresortie']);
-} 
+}
 else
 {
-    $erreur='Vous ne pouvez pas sortir vous n\'avez pas rempli le nécéssaire';
+    $erreur='<p style=color:red>Vous ne pouvez pas sortir vous n\'avez pas rempli le nécéssaire</p>';
 }
 ?>
-
-
-
 
 <!DOCTYPE html>
 
@@ -36,14 +42,18 @@ else
 
     <h1>Traitement du formulaire</h1>
 
-    <?php if ($erreur)  { ?>
+    <?php if ($erreur)
+    { ?>
     <?= $erreur ?>
-    <?php } else {
+    <?php
+    } else {
         '<p>Vous avez rempli le formulaire avec succés</p>';
     } ?>
     <?php ?>
 
+</br>
 
+<h1>Traitement checkbox</h1>
 
 <p>Et vous sortez pour le(s) motif(s) suivant(s) : </p>
 
@@ -59,11 +69,9 @@ if(!empty($_POST['check_list'])) {
 ?>
 </br>
 
+<h2>Acceuil</h2>
 
-    
-
-
-        <p><a href="/">Revenir à l'acceuil du formulaire de sortie</a></p>
+    <p><a href="/">Revenir à l'acceuil du formulaire de sortie</a></p>
 
 
 
