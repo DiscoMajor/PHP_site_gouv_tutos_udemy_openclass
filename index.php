@@ -67,7 +67,7 @@
             <label id="label_formulaires"><p>Code Postal</p></label><input type="text" pattern="[0-9]{5}" name="codepostal" id="size_for_classique" placeholder="56700" maxlength="5" required>
         </div>
 
- 
+
 
     <!-- TITRES CHECKBOX -->
 
@@ -129,7 +129,6 @@
 </form>
 
  
-
     <!--BOUTON CREATEUR PDF QUE JE SAIS PAS FAIRE -->
     <!--BOUTON CREATEUR PDF QUE JE SAIS PAS FAIRE -->
     <!--BOUTON CREATEUR PDF QUE JE SAIS PAS FAIRE -->

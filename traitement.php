@@ -12,7 +12,7 @@ if (!empty($_POST['prenom']) AND
     !empty($_POST['codepostal']) AND 
     !empty($_POST['datesortie']) AND 
     !empty($_POST['heuresortie'])
-    )
+   )
 {
     $prenom= htmlspecialchars ($_POST['prenom']);
     $nom= htmlspecialchars ($_POST['nom']);
@@ -42,16 +42,26 @@ else
 
     <h1>Traitement du formulaire</h1>
 
-    <?php if ($erreur)
-    { ?>
-    <?= $erreur ?>
-    <?php
-    } else {
-        '<p>Vous avez rempli le formulaire avec succés</p>';
-    } ?>
-    <?php ?>
 
-</br>
+<?php if (!empty($_POST['prenom']) AND 
+        !empty($_POST['nom']) AND 
+        !empty($_POST['datenaissance']) AND 
+        !empty($_POST['lieunaissance']) AND 
+        !empty($_POST['adresse']) AND 
+        !empty($_POST['ville']) AND 
+        !empty($_POST['codepostal']) AND 
+        !empty($_POST['datesortie']) AND 
+        !empty($_POST['heuresortie'])) 
+{ ?> 
+        <p style=color:darkgreen>Vous avez rempli le formulaire avec succés</p> 
+<?php 
+    } else {
+         echo $erreur;
+} ?>
+
+<?php ?>
+
+
 
 <h1>Traitement checkbox</h1>
 
